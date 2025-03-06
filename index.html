@@ -2,123 +2,144 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybersecurity Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background: #f4f4f4;
+            color: #333;
         }
+
         header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 2rem 0;
             text-align: center;
         }
+
         nav {
             display: flex;
             justify-content: center;
-            background: #444;
+            background: #34495e;
         }
+
         nav a {
-            color: #fff;
-            padding: 1rem;
+            color: #ecf0f1;
+            padding: 1rem 2rem;
             text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
         }
+
         nav a:hover {
-            background: #555;
+            background: #2980b9;
+            transform: scale(1.1);
         }
+
         section {
             padding: 2rem;
+            background: #fff;
+            margin: 1rem 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+
         .container {
             max-width: 960px;
             margin: auto;
-            overflow: hidden;
             padding: 0 2rem;
         }
+
         footer {
-            background: #333;
-            color: #fff;
+            background: #2c3e50;
+            color: #ecf0f1;
             text-align: center;
             padding: 1rem 0;
-            position: fixed;
-            width: 100%;
+            position: relative; /* Changed to relative for proper positioning */
             bottom: 0;
         }
-    </style>
 
+        .project a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <h1>Brandon Tsueda</h1>
-      <p>Cybersecurity Professional</p>
-    </div>
-  </header>
+    <header>
+        <div class="container">
+            <h1>Brandon Tsueda</h1>
+            <p>Cybersecurity Professional</p>
+        </div>
+    </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-     <a href="CyberResume-brandontsueda.pdf" target="_blank" title="Resume">Resume</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="CyberResume-brandontsueda.pdf" target="_blank" title="Resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <p>I am a student, father, and professional in the IT industry.</p>
-  </section>
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I am a student, father, and professional in the IT industry.</p>
+    </section>
 
-  <section id="skills" class="container">
-    <h2>Skills</h2>
-    <ul>
-      <li>Network Security</li>
-      <li>Threat Intelligence</li>
-      <li>Incident Response</li>
-      <li>Penetration Testing</li>
-      <li>Security Auditing</li>
-    </ul>
-  </section>
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <ul>
+            <li>Network Security</li>
+            <li>Threat Intelligence</li>
+            <li>Incident Response</li>
+            <li>Penetration Testing</li>
+            <li>Security Auditing</li>
+        </ul>
+    </section>
 
-  <section id="experience" class="container">
-    <h2>Experience</h2>
-    <p>I have experience with various technical components ranging from basic programming, multipls frameworks, multiple security tools, database structures and more.<br>
-    I have included my resume for further details.  I have enjoyed learning aobut the intracacies of cybersecurity and am looking forward to furthuring that over my professional career.</p>
-  </section>
+    <section id="experience" class="container">
+        <h2>Experience</h2>
+        <p>I have experience with various technical components ranging from basic programming to multiple frameworks, security tools, database structures, and more.<br>
+            I have included my resume for further details. I have enjoyed learning about the intricacies of cybersecurity and am looking forward to advancing my professional career.</p>
+    </section>
 
-  <section id="contact" class="container">
-    <h2>Contact</h2>
-    <p>Phone: 502-676-8984 | Email: brandon.tsueda@live.com | <div class="project linkedin">
-        <a href="https://www.linkedin.com/in/brandontsueda/" target="_blank" title="LinkedIn Profile"></p>
-  </section>
-<div>
-</div>
-<div> 
-   <footer>
-    <p>&copy; 2025 Brandon Tsueda. All Rights Reserved.</p>
-  </footer>
-</div>
-  <script>
-    <!-- Basic Google Analytics -->
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', '', 'auto');
-    ga('send', 'pageview');
-  </script>
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>Phone: 502-676-8984 | Email: <a href="mailto:brandon.tsueda@live.com">brandon.tsueda@live.com</a> | 
+        <div class="project">
+            <a href="https://www.linkedin.com/in/brandontsueda/" target="_blank" title="LinkedIn Profile">LinkedIn Profile</a>
+        </div>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Brandon Tsueda. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', '', 'auto');
+        ga('send', 'pageview');
+    </script>
 </body>
 
 </html>
