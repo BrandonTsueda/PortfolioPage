@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybersecurity Portfolio</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             background: #f4f4f4;
             color: #333;
+            padding-bottom: 60px; /* Prevents content overlap with footer */
         }
 
         header {
@@ -24,6 +29,7 @@
 
         nav {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             background: #34495e;
         }
@@ -40,18 +46,18 @@
             transform: scale(1.1);
         }
 
-        section {
-            padding: 2rem;
-            background: #fff;
-            margin: 1rem 0;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
         .container {
             max-width: 960px;
             margin: auto;
-            padding: 0 2rem;
+            padding: 2rem;
+        }
+
+        section {
+            padding: 2rem;
+            background: #fff;
+            margin: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         footer {
@@ -59,8 +65,18 @@
             color: #ecf0f1;
             text-align: center;
             padding: 1rem 0;
-            position: relative; /* Changed to relative for proper positioning */
+            position: fixed;
+            width: 100%;
             bottom: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 0.5rem 0;
         }
 
         .project a {
@@ -70,6 +86,47 @@
 
         .project a:hover {
             text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                padding: 1rem;
+                font-size: 1.2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+                margin: 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav a {
+                font-size: 1rem;
+                padding: 0.8rem;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .container {
+                padding: 0.8rem;
+            }
         }
     </style>
 </head>
@@ -92,11 +149,18 @@
 
     <section id="about" class="container">
         <h2>About Me</h2>
-        <p>I’m a passionate PC gaming enthusiast who loves diving into immersive worlds and staying up-to-date with the latest in gaming technology. When I’m not gaming, you’ll often find me playing guitar, exploring new sounds, and enjoying the creative expression that music brings.
-
-I firmly believe in maintaining a student mentality throughout life—there’s always something new to learn, whether it’s emerging technology, fresh perspectives, or ways to improve personally and professionally. I’m also a dedicated family man, cherishing the time I spend with my wife and kids.
-
-With a deep curiosity for new technology, I love exploring innovations and how they shape the world around us. Whether it’s gaming, music, or tech, I’m always eager to learn, grow, and connect with like-minded individuals.</p>
+        <p>
+            I’m a passionate PC gaming enthusiast who loves diving into immersive worlds and staying up-to-date with the latest in gaming technology. 
+            When I’m not gaming, you’ll often find me playing guitar, exploring new sounds, and enjoying the creative expression that music brings.
+        </p>
+        <p>
+            I firmly believe in maintaining a student mentality throughout life—there’s always something new to learn, whether it’s emerging technology, fresh perspectives, or ways to improve personally and professionally. 
+            I’m also a dedicated family man, cherishing the time I spend with my wife and kids.
+        </p>
+        <p>
+            With a deep curiosity for new technology, I love exploring innovations and how they shape the world around us. 
+            Whether it’s gaming, music, or tech, I’m always eager to learn, grow, and connect with like-minded individuals.
+        </p>
     </section>
 
     <section id="skills" class="container">
@@ -112,17 +176,20 @@ With a deep curiosity for new technology, I love exploring innovations and how t
 
     <section id="experience" class="container">
         <h2>Experience</h2>
-        <p>I have experience with various technical components ranging from basic programming to multiple frameworks, security tools, database structures, and more.<br>
-            I have included my resume for further details. I have enjoyed learning about the intricacies of cybersecurity and am looking forward to advancing my professional career.</p>
+        <p>
+            I have experience with various technical components ranging from basic programming to multiple frameworks, security tools, database structures, and more.
+        </p>
+        <p>
+            I have included my resume for further details. I have enjoyed learning about the intricacies of cybersecurity and am looking forward to advancing my professional career.
+        </p>
     </section>
 
     <section id="contact" class="container">
         <h2>Contact</h2>
-        <p>Phone: 502-676-8984 | Email: <a href="mailto:brandon.tsueda@live.com">brandon.tsueda@live.com</a> | 
+        <p>Phone: 502-676-8984 | Email: <a href="mailto:brandon.tsueda@live.com">brandon.tsueda@live.com</a></p>
         <div class="project">
             <a href="https://www.linkedin.com/in/brandontsueda/" target="_blank" title="LinkedIn Profile">LinkedIn Profile</a>
         </div>
-        </p>
     </section>
 
     <footer>
