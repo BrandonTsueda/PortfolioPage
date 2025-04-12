@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+    padding-bottom: 80px;
+  }
+  
+  header {
+    background: #2c3e50;
+    text-align: center;
+  }
+  
+  .header-image img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 4px solid #1a252f;
+  }
+  
+  .name-title {
+    text-align: center;
+    margin: 2rem auto 1rem auto;
+  }
+  
+  .name-title h1 {
+    font-size: 2.75rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .name-title p {
+    font-size: 1.25rem;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #34495e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    color: #ecf0f1;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  nav a:hover,
+  nav a:focus {
+    background: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background: #ffffff;
+    margin: 1.5rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  section h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  
+  ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .project a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .project a:hover,
+  .project a:focus {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav a {
+      padding: 1rem;
+      font-size: 1.1rem;
+    }
+  
+    .container {
+      padding: 1rem;
+    }
+  
+    section {
+      padding: 1.25rem;
+      margin: 1rem 0.5rem;
+    }
+  
+    .name-title h1 {
+      font-size: 2.2rem;
+    }
+  
+    .name-title p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav a {
+      font-size: 1rem;
+      padding: 0.75rem;
+    }
+  
+    .name-title h1 {
+      font-size: 1.8rem;
+    }
+  
+    .name-title p {
+      font-size: 0.95rem;
+    }
+  
+    .container {
+      padding: 0.75rem;
+    }
+  
+    section h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
