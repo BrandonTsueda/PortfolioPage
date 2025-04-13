@@ -1,3 +1,4 @@
+
 /* Box Model Reset */
 * {
   box-sizing: border-box;
@@ -9,8 +10,8 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background: #eef2f5; /* Light neutral background */
-  color: #333;
+  background: #0f1b2b;
+  color: #c0c9d2;
   padding-bottom: 60px;
 }
 
@@ -26,8 +27,8 @@ body {
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #2c3e50;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 4px solid #17a2b8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* Name and Subtitle */
@@ -38,13 +39,13 @@ body {
 
 .name-title h1 {
   font-size: 2.5em;
-  color: #2c3e50;
+  color: #e0e0e0;
 }
 
 .name-title .subtitle,
 .name-title p {
   font-size: 1.25em;
-  color: #444;
+  color: #c0c9d2;
   margin-top: 8px;
 }
 
@@ -54,15 +55,14 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  background: #ffffff;
+  background: #192a3d;
   padding: 15px 0;
   margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
   text-decoration: none;
-  color: #2c3e50;
+  color: #17a2b8;
   font-weight: bold;
   padding: 8px 14px;
   border-radius: 8px;
@@ -70,17 +70,18 @@ nav a {
 }
 
 nav a:hover {
-  background: #eaeaea;
+  background: #253b53;
 }
 
 /* Section Containers */
 .container {
   max-width: 900px;
-  margin: auto;
+  width: 90%;
+  margin: 30px auto;
   padding: 20px;
-  background: #ffffff;
+  background: #192a3d;
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
 }
 
@@ -88,7 +89,7 @@ nav a:hover {
 section h2 {
   font-size: 1.75em;
   margin-bottom: 15px;
-  color: #2c3e50;
+  color: #e0e0e0;
 }
 
 section p,
@@ -98,32 +99,57 @@ section li {
 }
 
 /* Project List Styling */
-.project-list ul {
-  list-style: none;
-  padding: 0;
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
-.project-list li {
-  margin: 12px 0;
+.project-card {
+  background: #192a3d;
+  border-left: 6px solid #17a2b8;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
-.project-list a {
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: #c0c9d2;
+}
+
+.btn-view {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #17a2b8;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  color: #2c3e50;
-  transition: color 0.3s ease;
+  border-radius: 6px;
+  transition: background 0.3s ease;
 }
 
-.project-list a:hover {
-  color: #007acc;
+.btn-view:hover {
+  background-color: #1395a2;
 }
 
 /* Footer Styling */
 footer {
   text-align: center;
   padding: 20px 10px;
-  background: #2c3e50;
-  color: #fff;
+  background: #192a3d;
+  color: #aaa;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -158,3 +184,4 @@ footer {
     padding: 15px;
   }
 }
+/* End of CSS */
