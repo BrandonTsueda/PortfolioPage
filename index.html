@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,63 +6,96 @@
   <title>Brandon Tsueda – Cybersecurity Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="portrait-container">
-      <img src="Assets/Professional_Headshot.jpg" alt="Brandon Tsueda Professional Headshot" class="portrait-img" />
+  <header class="py-4 text-center">
+    <div class="portrait-container mx-auto">
+      <img src="Assets/Professional_Headshot.jpg" alt="Brandon Tsueda Professional Headshot" class="portrait-img">
     </div>
   </header>
 
-  <div class="container name-title">
-    <h1>Brandon Tsueda</h1>
-    <p>Cybersecurity Professional</p>
+  <div class="container text-center mb-4">
+    <h1 class="display-4" style="color:#17a2b8;">Brandon Tsueda</h1>
+    <p class="lead fw-bold" style="color:#c0c9d2;">Cybersecurity Professional</p>
   </div>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="projects.html">Projects</a>
-    <a href="Brandon_Tsueda_Resume.pdf" target="_blank">Resume</a>
-    <a href="#contact">Contact</a>
+  <nav class="bg-dark text-white rounded shadow p-3 mb-5">
+    <div class="d-flex justify-content-center flex-wrap">
+      <a href="#about" class="text-white text-decoration-none mx-3 p-2 rounded">About</a>
+      <a href="#experience" class="text-white text-decoration-none mx-3 p-2 rounded">Experience</a>
+      <a href="#skills" class="text-white text-decoration-none mx-3 p-2 rounded">Skills</a>
+      <a href="projects.html" class="text-white text-decoration-none mx-3 p-2 rounded">Projects</a>
+      <a href="Brandon_Tsueda_Resume.pdf" target="_blank" class="text-white text-decoration-none mx-3 p-2 rounded">Resume</a>
+      <a href="#contact" class="text-white text-decoration-none mx-3 p-2 rounded">Contact</a>
+    </div>
   </nav>
 
-  <section id="about" class="container">
-    <h2>About Me</h2>
+  <section id="about" class="container mb-5">
+    <h2 class="text-center" style="color:#17a2b8;">About Me</h2>
     <p>I’m a passionate PC gaming enthusiast who loves diving into immersive worlds and staying up-to-date with the latest in gaming technology.</p>
     <p>When I’m not gaming, you’ll often find me playing guitar, exploring new sounds, and enjoying the creative expression that music brings.</p>
     <p>I firmly believe in maintaining a student mentality throughout life—there’s always something new to learn, whether it’s emerging technology or ways to improve personally and professionally.</p>
   </section>
 
-  <section id="skills" class="container">
-    <h2>Skills</h2>
-    <ul>
-      <li>Network Security</li>
-      <li>Threat Intelligence</li>
-      <li>Incident Response</li>
-      <li>Penetration Testing</li>
-      <li>Security Auditing</li>
-    </ul>
+  <section id="experience" class="container mb-5">
+    <h2 class="text-center" style="color:#17a2b8;">Experience</h2>
+    <p>I bring a diverse technical background shaped by hands-on academic and professional experience. In my current role as a Network Operations Center Engineer at Humana, I proactively monitor enterprise networks, analyze anomalies, and work to ensure 24/7 infrastructure integrity. My time at Microsoft as a Global Inside Partner Development Manager sharpened my skills in cloud architecture, compliance communication, and stakeholder engagement for SaaS and Azure portfolios exceeding $700,000 annually.</p>
+    <p>My academic work has allowed me to design and document entire security frameworks for simulated business environments, including data protection plans, password management policies, and patch management schedules. I’ve conducted vulnerability assessments using tools like Nessus and Metasploit, and implemented network segmentation, firewalls, and secure remote access policies as part of cybersecurity architecture projects. These hands-on opportunities gave me experience that translates directly to enterprise-level environments.</p>
+    <p>Whether building out security documentation for eCommerce organizations or auditing systems against NIST 800-53 and PCI DSS standards, I’ve developed a balanced skill set combining technical execution with policy understanding. I’m focused on driving cybersecurity maturity and continuous improvement across every environment I engage with.</p>
   </section>
 
-  <section id="experience" class="container">
-    <h2>Experience</h2>
-    <p>I have experience with various technical components ranging from basic programming to multiple frameworks, security tools, database structures, and more.</p>
-    <p>Hands-on penetration testing with Kali Linux tools including: Nmap, OpenVAS, Kismet Wireless, John the Ripper, Metasploit, Burp Suite, and Wireshark.</p>
-    <p>I have included my resume for further details. I have enjoyed learning about the intricacies of cybersecurity and am looking forward to advancing my professional career.</p>
-  </section>
-
-  <section id="contact" class="container">
-    <h2>Contact</h2>
-    <p>Phone: 502-676-8984 | Email: <a href="mailto:brandon.tsueda@live.com">brandon.tsueda@live.com</a></p>
-    <div class="project">
-      <a href="https://www.linkedin.com/in/brandontsueda/" target="_blank">LinkedIn Profile</a>
+  <section id="skills" class="container mb-5">
+    <h2 class="text-center" style="color:#17a2b8;">Skills</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <button class="btn btn-info text-white shadow w-100" data-bs-toggle="collapse" data-bs-target="#skill1">Network Security</button>
+        <div class="collapse mt-2" id="skill1">
+          <div class="card card-body bg-dark text-light">During my academic journey, I led projects that simulated real-world business network deployments. I designed secure topologies using VLAN segmentation, configured firewalls, and deployed intrusion detection systems to ensure confidentiality and uptime. These experiences taught me how to balance performance with protection—skills I've carried forward into my professional role managing live environments.</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-info text-white shadow w-100" data-bs-toggle="collapse" data-bs-target="#skill2">Threat Intelligence</button>
+        <div class="collapse mt-2" id="skill2">
+          <div class="card card-body bg-dark text-light">I’ve actively worked on aggregating and interpreting threat intelligence feeds to help my team stay ahead of evolving attack vectors. Whether tracking the MITRE ATT&CK framework or using open-source intel tools, I've supported threat modeling and defense strategies that helped organizations make better-informed security decisions and respond more quickly to threats.</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-info text-white shadow w-100" data-bs-toggle="collapse" data-bs-target="#skill3">Incident Response</button>
+        <div class="collapse mt-2" id="skill3">
+          <div class="card card-body bg-dark text-light">During my time at Humana and on various academic projects, I’ve coordinated and executed incident response efforts—from initial detection through containment and recovery. I’ve responded to phishing incidents, privilege escalation, and suspicious traffic alerts. My ability to lead post-incident reviews has helped improve policy and incident readiness.</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <button class="btn btn-info text-white shadow w-100" data-bs-toggle="collapse" data-bs-target="#skill4">Penetration Testing</button>
+        <div class="collapse mt-2" id="skill4">
+          <div class="card card-body bg-dark text-light">I’ve performed both authenticated and unauthenticated scans using tools like Nessus and Metasploit. My testing experience includes identifying exploitable misconfigurations, creating custom payloads, and reporting vulnerabilities in a way that technical and non-technical stakeholders can act on. These engagements often led to measurable improvements in system hardening and awareness.</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <button class="btn btn-info text-white shadow w-100" data-bs-toggle="collapse" data-bs-target="#skill5">Security Auditing</button>
+        <div class="collapse mt-2" id="skill5">
+          <div class="card card-body bg-dark text-light">I’ve contributed to auditing environments against NIST 800-53 and PCI DSS requirements, preparing detailed documentation and assessing evidence for compliance. From evaluating IAM policies to reviewing data retention standards, my auditing work helps organizations uncover gaps in both technical implementation and policy enforcement—leading to stronger controls and reduced risk.</div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Brandon Tsueda. All Rights Reserved.</p>
+  <section id="contact" class="container mb-5 text-center">
+    <h2 class="text-center" style="color:#17a2b8;">Contact</h2>
+    <p class="mb-2"><strong>Phone:</strong> <a href="tel:5026768984">502-676-8984</a></p>
+    <p><strong>Email:</strong> <a href="mailto:brandon.tsueda@live.com">brandon.tsueda@live.com</a></p>
+    <div class="mt-4">
+      <a href="https://www.linkedin.com/in/brandontsueda/" target="_blank" class="btn btn-info text-white">
+        <i class="bi bi-linkedin me-2"></i>LinkedIn Profile
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white p-4 text-center mt-5">
+    <p class="mb-0">&copy; 2025 Brandon Tsueda. All Rights Reserved.</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
