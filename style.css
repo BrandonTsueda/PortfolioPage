@@ -1,25 +1,55 @@
-
-/* Box Model Reset */
+/* =========================
+   Global Reset
+========================= */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Body Styling */
+/* =========================
+   Base Layout
+========================= */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
   background: #0f1b2b;
   color: #c0c9d2;
-  padding-bottom: 60px;
+  min-height: 100vh;
 }
 
-/* Header Image */
+/* =========================
+   Shared Containers
+========================= */
+.page-shell {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.content-card {
+  background: #192a3d;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22);
+  padding: 24px;
+  margin-bottom: 28px;
+}
+
+/* =========================
+   Header / Hero
+========================= */
+.site-header {
+  padding: 28px 0 18px;
+  text-align: center;
+}
+
 .portrait-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-bottom: 18px;
 }
 
 .portrait-img {
@@ -28,77 +58,110 @@ body {
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #17a2b8;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
 }
 
-/* Name and Subtitle */
-.name-title {
+.hero-card {
   text-align: center;
-  margin: 20px auto;
 }
 
-.name-title h1 {
-  font-size: 2.5em;
-  color: #e0e0e0;
+.hero-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #17a2b8;
+  margin-bottom: 8px;
 }
 
-.name-title .subtitle,
-.name-title p {
-  font-size: 1.25em;
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.2rem);
   color: #c0c9d2;
-  margin-top: 8px;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 
-/* Navigation Bar */
-nav {
+/* =========================
+   Navigation
+========================= */
+.site-nav {
+  background: #192a3d;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22);
+  padding: 14px 16px;
+  margin-bottom: 28px;
+}
+
+.site-nav-links {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
-  background: #192a3d;
-  padding: 15px 0;
-  margin-bottom: 20px;
+  gap: 10px;
 }
 
-nav a {
+.site-nav a {
   text-decoration: none;
-  color: #17a2b8;
-  font-weight: bold;
-  padding: 8px 14px;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 10px 14px;
   border-radius: 8px;
-  transition: background 0.3s ease;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+  white-space: nowrap;
 }
 
-nav a:hover {
+.site-nav a:hover,
+.site-nav a.active {
   background: #253b53;
+  color: #17a2b8;
+  transform: translateY(-1px);
 }
 
-/* Section Containers */
-.container {
-  max-width: 900px;
-  width: 90%;
-  margin: 30px auto;
-  padding: 20px;
-  background: #192a3d;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
+/* =========================
+   Typography / Sections
+========================= */
+.section-title {
+  text-align: center;
+  color: #17a2b8;
+  margin-bottom: 16px;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
 }
 
-/* Section Headers */
-section h2 {
-  font-size: 1.75em;
-  margin-bottom: 15px;
-  color: #e0e0e0;
+.content-card p,
+.content-card li {
+  font-size: 1.02rem;
+  margin-bottom: 12px;
 }
 
-section p,
-section li {
-  font-size: 1.05em;
-  margin-bottom: 10px;
+.content-card ul {
+  padding-left: 20px;
+  margin-top: 10px;
 }
 
-/* Project List Styling */
+/* =========================
+   Skills / Buttons / Collapse
+========================= */
+.skill-button {
+  width: 100%;
+  background-color: #17a2b8;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-button:hover,
+.skill-button:focus {
+  background-color: #1395a2;
+  color: #fff;
+}
+
+.skill-card {
+  background: #101922;
+  color: #e7edf3;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* =========================
+   Project Grid
+========================= */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -107,81 +170,171 @@ section li {
 }
 
 .project-card {
-  background: #192a3d;
+  background: #223549;
   border-left: 6px solid #17a2b8;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.28);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
 }
 
 .project-card h3 {
   color: #e0e0e0;
   margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .project-card p {
-  font-size: 1em;
   color: #c0c9d2;
+  margin-bottom: 12px;
 }
 
 .btn-view {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 6px;
   padding: 10px 16px;
   background-color: #17a2b8;
   color: #fff;
   text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s ease;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: background 0.25s ease, transform 0.2s ease;
 }
 
 .btn-view:hover {
   background-color: #1395a2;
+  color: #fff;
+  transform: translateY(-1px);
 }
 
-/* Footer Styling */
-footer {
-  text-align: center;
-  padding: 20px 10px;
-  background: #192a3d;
-  color: #aaa;
-  position: relative;
-  bottom: 0;
+/* =========================
+   Password Analyzer
+========================= */
+.psa-container {
+  margin-top: 12px;
+}
+
+.psa-container input {
   width: 100%;
-  margin-top: 40px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
 }
 
-/* Responsive Media Query */
-@media (max-width: 600px) {
+#strength-bar {
+  width: 100%;
+  height: 12px;
+  border-radius: 999px;
+  background: #34495e;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#feedback {
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+/* =========================
+   Links / Contact
+========================= */
+a {
+  color: #6fd8e8;
+}
+
+a:hover {
+  color: #9ee8f2;
+}
+
+/* =========================
+   Footer
+========================= */
+.site-footer {
+  text-align: center;
+  padding: 24px 12px 36px;
+  color: #aaa;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+@media (max-width: 991px) {
+  .content-card {
+    padding: 22px;
+  }
+
+  .site-nav {
+    padding: 12px;
+  }
+
+  .site-nav a {
+    padding: 9px 12px;
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-shell {
+    width: 94%;
+  }
+
   .portrait-img {
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
   }
 
-  .name-title h1 {
-    font-size: 2em;
+  .content-card {
+    padding: 18px;
+    margin-bottom: 22px;
   }
 
-  .name-title .subtitle {
-    font-size: 1.1em;
+  .site-nav-links {
+    gap: 8px;
   }
 
-  nav {
-    flex-direction: column;
-    gap: 10px;
+  .site-nav a {
+    font-size: 0.95rem;
+    padding: 8px 10px;
   }
 
-  nav a {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .portrait-img {
+    width: 132px;
+    height: 132px;
+  }
+
+  .site-header {
+    padding-top: 20px;
+  }
+
+  .site-nav {
     padding: 10px;
   }
 
-  .container {
-    padding: 15px;
+  .site-nav-links {
+    justify-content: center;
+  }
+
+  .site-nav a {
+    font-size: 0.9rem;
+    padding: 8px 9px;
+  }
+
+  .content-card p,
+  .content-card li {
+    font-size: 0.98rem;
   }
 }
-/* End of CSS */

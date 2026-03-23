@@ -1,73 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bratsu's Story Generator</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <style>
-    nav {
-      background-color: #192a3d !important;
-    }
-    nav a:hover,
-    nav a.active {
-      background-color: #253b53;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bratsu's Story Generator – Brandon Tsueda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
 <body>
-  <header class="py-4 text-center">
-    <div class="portrait-container mx-auto">
-      <img src="Assets/Professional_Headshot.jpg" alt="Brandon Tsueda Professional Headshot" class="portrait-img">
-    </div>
-  </header>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="portrait-container">
+        <img src="Assets/Professional_Headshot.jpg" alt="Brandon Tsueda Professional Headshot" class="portrait-img" />
+      </div>
 
-  <div class="container text-center mb-4">
-    <h1 class="display-4" style="color:#17a2b8;">Bratsu's Story Generator</h1>
-    <p class="lead fw-bold" style="color:#c0c9d2;">A creative coding project</p>
+      <div class="content-card hero-card">
+        <h1 class="hero-title">Bratsu's Story Generator</h1>
+        <p class="hero-subtitle">A creative coding project</p>
+      </div>
+    </header>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="site-nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="Brandon_Tsueda_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="content-card">
+      <p>
+        Bratsu's Story Generator is a lighthearted, interactive app that lets you create your own short stories with just a few word prompts.
+        Choose a genre—Fantasy, Sci-Fi, or Mystery among others—and enter a noun, verb, adjective, and adverb to instantly generate a fun, personalized adventure.
+      </p>
+
+      <p>
+        This was one of my early programming projects, originally built in C# using Windows Forms. Recently, I revisited and updated it as a fun way for my kids to explore creativity through storytelling.
+        It now includes a polished GUI, the ability to export stories to a formatted <code>.txt</code> file, and a self-contained Windows executable.
+      </p>
+
+      <p>
+        It's a simple but fun example of how code and imagination can come together. Whether you're trying it solo or with your kids, the Story Generator makes it easy to create something quirky and unique.
+      </p>
+
+      <div class="mt-4 mb-3">
+        <a href="https://github.com/BrandonTsueda/StoryGeneratorApp/releases/download/StoryGenerator/Bratsu_Story_Generator_Setup.exe"
+           class="btn btn-info text-white"
+           target="_blank"
+           rel="noopener noreferrer">
+          ⬇️ Download StoryGeneratorApp.exe
+        </a>
+      </div>
+
+      <p><em>Built with 💻 and a bit of nostalgia.</em></p>
+    </section>
+
+    <footer class="site-footer">
+      <p class="mb-0">&copy; 2025 Brandon Tsueda. All Rights Reserved.</p>
+    </footer>
   </div>
-
-  <nav class="text-white rounded shadow p-3 mb-5">
-    <div class="d-flex justify-content-center flex-wrap">
-      <a href="index.html#about" class="text-white text-decoration-none mx-3 p-2 rounded">About</a>
-      <a href="index.html#experience" class="text-white text-decoration-none mx-3 p-2 rounded">Experience</a>
-      <a href="index.html#skills" class="text-white text-decoration-none mx-3 p-2 rounded">Skills</a>
-      <a href="projects.html" class="text-white text-decoration-none mx-3 p-2 rounded">Projects</a>
-      <a href="Brandon_Tsueda_Resume.pdf" target="_blank" class="text-white text-decoration-none mx-3 p-2 rounded">Resume</a>
-      <a href="index.html#contact" class="text-white text-decoration-none mx-3 p-2 rounded">Contact</a>
-    </div>
-  </nav>
-
-  <section class="container mb-5">
-    <p>
-      Bratsu's Story Generator is a lighthearted, interactive app that lets you create your own short stories with just a few word prompts.
-      Choose a genre—Fantasy, Sci-Fi, or Mystery among others—and enter a noun, verb, adjective, and adverb to instantly generate a fun, personalized adventure.
-    </p>
-
-    <p>
-      This was one of my early programming projects, originally built in C# using Windows Forms. Recently, I revisited and updated it as a fun way for my kids to explore creativity through storytelling.
-      It now includes a polished GUI, the ability to export stories to a formatted `.txt` file, and a self-contained Windows executable.
-    </p>
-
-    <p>
-      It's a simple but fun example of how code and imagination can come together. Whether you're trying it solo or with your kids, the Story Generator makes it easy to create something quirky and unique.
-    </p>
-
-    <div style="margin: 30px 0;">
-      <a href="https://github.com/BrandonTsueda/StoryGeneratorApp/releases/download/StoryGenerator/Bratsu_Story_Generator_Setup.exe"
-         class="btn btn-info text-white">
-        ⬇️ Download StoryGeneratorApp.exe
-      </a>
-    </div>
-
-    <p><em>Built with 💻 and a bit of nostalgia.</em></p>
-  </section>
-
-  <footer class="bg-dark text-white p-4 text-center mt-5">
-    <p class="mb-0">&copy; 2025 Brandon Tsueda. All Rights Reserved.</p>
-  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
