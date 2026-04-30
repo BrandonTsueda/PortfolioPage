@@ -160,6 +160,38 @@ body {
 }
 
 /* =========================
+   Education Cards
+========================= */
+.edu-card {
+  background: #223549;
+  border-left: 6px solid #17a2b8;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+  text-align: center;
+}
+
+.edu-degree {
+  color: #17a2b8;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.edu-field {
+  color: #e7edf3;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.edu-school {
+  color: #c0c9d2;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* =========================
    Project Grid
 ========================= */
 .project-grid {
@@ -193,6 +225,22 @@ body {
 .project-card p {
   color: #c0c9d2;
   margin-bottom: 12px;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.tech-badge {
+  background: #17a2b8;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
 }
 
 .btn-view {
