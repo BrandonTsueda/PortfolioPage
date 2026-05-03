@@ -152,7 +152,7 @@ story.append(
 story += section("Professional Summary")
 story.append(
     p(
-        "Network Operations Engineer with hands-on experience monitoring enterprise infrastructure, triaging alerts, "
+        "Network Operations Engineer with hands-on enterprise experience monitoring infrastructure, triaging alerts, "
         "supporting incident response workflows, and maintaining service availability in a 24/7 NOC environment. "
         "Holds a Master of Science in Business Intelligence, Bachelor of Science in Cybersecurity, and Associate "
         "of Science in Information Technology. Strong foundation across networking, security, Linux/Windows systems, "
@@ -181,7 +181,7 @@ skills_table.setStyle(TableStyle([
 story.append(skills_table)
 
 story += section("Professional Experience")
-story.append(p("Network Operations Center Engineer | Humana | Louisville, KY | April 2024 - Present", styles["Role"]))
+story.append(p("Network Operations Center Engineer | Humana | Louisville, KY | April 2024 - May 2026", styles["Role"]))
 story += bullets([
     "Monitor enterprise network activity, server health, and application signals across large-scale environments supporting 50,000+ servers.",
     "Investigate alerts and outage tickets using SolarWinds, Dynatrace, ServiceNow, and related operational tools.",
