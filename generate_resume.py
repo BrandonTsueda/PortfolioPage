@@ -181,7 +181,7 @@ skills_table.setStyle(TableStyle([
 story.append(skills_table)
 
 story += section("Professional Experience")
-story.append(p("Network Operations Center Engineer | Humana | Louisville, KY | April 2024 - May 2026", styles["Role"]))
+story.append(p("Network Operations Center Engineer | Humana | Louisville, KY | April 2024 - April 2026", styles["Role"]))
 story += bullets([
     "Monitor enterprise network activity, server health, and application signals across large-scale environments supporting 50,000+ servers.",
     "Investigate alerts and outage tickets using SolarWinds, Dynatrace, ServiceNow, and related operational tools.",
