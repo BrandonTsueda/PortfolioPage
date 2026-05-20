@@ -29,11 +29,11 @@
     <section class="hero-section">
       <div class="hero-copy">
         <p class="eyebrow">Network Engineering | Cybersecurity | Infrastructure</p>
-        <h1>Operationally minded network engineer focused on reliable, secure systems.</h1>
+        <h1>I build and troubleshoot systems the way operations teams actually use them.</h1>
         <p class="hero-lead">
-          I bring enterprise NOC experience, cybersecurity training, and hands-on homelab ownership together.
-          My work centers on alert triage, infrastructure visibility, secure access, practical automation,
-          and clear documentation when systems need to be understood quickly.
+          My background combines enterprise NOC work, cybersecurity training, business intelligence, and a real
+          Proxmox homelab that gives me room to test monitoring, access, automation, and recovery patterns before
+          they become resume bullet points.
         </p>
         <div class="hero-actions">
           <a class="button primary" href="Brandon_Tsueda_Resume.pdf" target="_blank" rel="noopener noreferrer">
@@ -42,6 +42,9 @@
           <a class="button secondary" href="projects.html">
             <i class="bi bi-terminal"></i> View Projects
           </a>
+          <button class="modal-button secondary" type="button" data-modal-target="work-style-modal">
+            <i class="bi bi-window-sidebar"></i> Work Style
+          </button>
         </div>
       </div>
       <aside class="hero-panel" aria-label="Professional profile snapshot">
@@ -77,19 +80,19 @@
     <section id="about" class="section-grid">
       <div>
         <p class="eyebrow">Profile</p>
-        <h2>Built for roles where reliability, judgment, and follow-through matter.</h2>
+        <h2>Comfortable in the space between an alert, a system, and the person waiting for an answer.</h2>
       </div>
       <div class="content-block">
         <p>
-          My background sits at the intersection of network operations, cybersecurity, analytics, and practical
-          infrastructure ownership. I am comfortable working through ambiguous alerts, narrowing down likely causes,
-          documenting what changed, and communicating clearly when an issue needs escalation.
+          I like work where evidence matters. A bad check, a quiet service, a firewall change, a DNS record, a queue
+          that stopped moving, or a dashboard that suddenly looks wrong all need the same habits: verify the signal,
+          map the dependency, reduce the blast radius, and leave notes someone else can trust.
         </p>
         <p>
           Outside of work, I run a Proxmox-based homelab with Linux containers, VMs, reverse proxying, DNS, VPN,
           monitoring dashboards, self-hosted AI tools, media services, and web applications. It gives me a real
-          environment to practice system hardening, automation, observability, and recovery in a way that stays grounded
-          in real operational tradeoffs.
+          environment to practice system hardening, automation, observability, and recovery with real operational
+          tradeoffs instead of toy examples.
         </p>
       </div>
     </section>
@@ -97,7 +100,7 @@
     <section id="experience" class="content-card">
       <div class="section-heading">
         <p class="eyebrow">Experience</p>
-        <h2>Enterprise operations supported by hands-on infrastructure ownership.</h2>
+        <h2>Enterprise operations backed by hands-on infrastructure ownership.</h2>
       </div>
 
       <div class="timeline">
@@ -131,7 +134,7 @@
     <section id="skills" class="section-grid">
       <div>
         <p class="eyebrow">Skills</p>
-        <h2>Practical technical coverage for NOC, security, and infrastructure roles.</h2>
+        <h2>Practical technical coverage for NOC, security, infrastructure, and analyst roles.</h2>
       </div>
       <div class="skill-grid">
         <div class="skill-card">
@@ -205,5 +208,39 @@
   <footer class="site-footer">
     <p>&copy; 2026 Brandon Tsueda. Built with practical infrastructure experience behind it.</p>
   </footer>
+
+  <dialog class="detail-modal" id="work-style-modal" aria-labelledby="work-style-title">
+    <div class="modal-shell">
+      <div class="modal-header">
+        <div>
+          <p class="eyebrow">How I Work</p>
+          <h2 id="work-style-title">Calm triage, clean notes, and practical automation.</h2>
+        </div>
+        <button class="modal-close" type="button" aria-label="Close dialog"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-grid">
+          <div class="modal-note">
+            <h3>When something breaks</h3>
+            <p>I start with the real signal, verify the target, check dependencies, and separate what changed from what merely looks suspicious.</p>
+          </div>
+          <div class="modal-note">
+            <h3>When something repeats</h3>
+            <p>I turn the pattern into a checklist, script, dashboard, or documented workflow so the next response is faster and less fragile.</p>
+          </div>
+          <div class="modal-note">
+            <h3>When risk is involved</h3>
+            <p>I keep access, logging, change impact, and rollback paths visible. Good operations work should make security easier to audit.</p>
+          </div>
+          <div class="modal-note">
+            <h3>When I communicate</h3>
+            <p>I write for the next engineer, the stakeholder, and my future self: what happened, what I checked, what changed, and what remains.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="site.js"></script>
 </body>
 </html>

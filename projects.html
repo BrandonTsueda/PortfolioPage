@@ -28,10 +28,10 @@
   <main>
     <section class="page-hero">
       <p class="eyebrow">Selected Work</p>
-      <h1>Projects that show practical infrastructure, automation, security, and analysis work.</h1>
+      <h1>Projects with operational edges, not just screenshots and buzzwords.</h1>
       <p>
-        These are selected examples of how I approach technical work: understand the environment,
-        reduce risk, improve visibility, document decisions, and build something useful enough to keep using.
+        These are selected examples of how I work: understand the environment, improve visibility,
+        reduce risk, document decisions, and keep the result useful after the first demo.
       </p>
     </section>
 
@@ -47,7 +47,10 @@
         <div class="tech-badges">
           <span>React</span><span>Vite</span><span>FastAPI</span><span>Python</span><span>Monitoring</span>
         </div>
-        <a href="https://github.com/BrandonTsueda/netops-command-center" class="text-link" target="_blank" rel="noopener noreferrer">View repository</a>
+        <div class="inline-actions">
+          <button class="modal-button secondary" type="button" data-modal-target="netops-modal">Details</button>
+          <a href="https://github.com/BrandonTsueda/netops-command-center" class="text-link" target="_blank" rel="noopener noreferrer">Repository</a>
+        </div>
       </article>
 
       <article class="project-card featured">
@@ -61,7 +64,10 @@
         <div class="tech-badges">
           <span>Next.js</span><span>TypeScript</span><span>Electron</span><span>Local Data</span>
         </div>
-        <a href="https://github.com/BrandonTsueda/context-window" class="text-link" target="_blank" rel="noopener noreferrer">View repository</a>
+        <div class="inline-actions">
+          <button class="modal-button secondary" type="button" data-modal-target="context-modal">Details</button>
+          <a href="https://github.com/BrandonTsueda/context-window" class="text-link" target="_blank" rel="noopener noreferrer">Repository</a>
+        </div>
       </article>
 
       <article class="project-card featured">
@@ -74,6 +80,9 @@
         </p>
         <div class="tech-badges">
           <span>Proxmox</span><span>Linux</span><span>Docker</span><span>Nginx</span><span>Tailscale</span>
+        </div>
+        <div class="inline-actions">
+          <button class="modal-button secondary" type="button" data-modal-target="homelab-modal">Details</button>
         </div>
       </article>
 
@@ -88,7 +97,10 @@
         <div class="tech-badges">
           <span>Python</span><span>Tkinter</span><span>Testing</span><span>Desktop App</span>
         </div>
-        <a href="https://github.com/BrandonTsueda/ClassInstructionCondenser" class="text-link" target="_blank" rel="noopener noreferrer">View repository</a>
+        <div class="inline-actions">
+          <button class="modal-button secondary" type="button" data-modal-target="class-modal">Details</button>
+          <a href="https://github.com/BrandonTsueda/ClassInstructionCondenser" class="text-link" target="_blank" rel="noopener noreferrer">Repository</a>
+        </div>
       </article>
 
       <article class="project-card">
@@ -101,7 +113,10 @@
         <div class="tech-badges">
           <span>Python</span><span>Discord Webhook</span><span>Automation</span><span>Logging</span>
         </div>
-        <a href="https://github.com/BrandonTsueda/media-update-broadcaster" class="text-link" target="_blank" rel="noopener noreferrer">View repository</a>
+        <div class="inline-actions">
+          <button class="modal-button secondary" type="button" data-modal-target="media-modal">Details</button>
+          <a href="https://github.com/BrandonTsueda/media-update-broadcaster" class="text-link" target="_blank" rel="noopener noreferrer">Repository</a>
+        </div>
       </article>
 
       <article class="project-card">
@@ -114,7 +129,10 @@
         <div class="tech-badges">
           <span>JavaScript</span><span>HTML</span><span>CSS</span><span>Security Awareness</span>
         </div>
-        <a href="https://github.com/BrandonTsueda/PasswordChecker" class="text-link" target="_blank" rel="noopener noreferrer">View repository</a>
+        <div class="inline-actions">
+          <button class="modal-button secondary" type="button" data-modal-target="password-modal">Details</button>
+          <a href="https://github.com/BrandonTsueda/PasswordChecker" class="text-link" target="_blank" rel="noopener noreferrer">Repository</a>
+        </div>
       </article>
 
       <article class="project-card">
@@ -128,6 +146,9 @@
         <div class="tech-badges">
           <span>Ollama</span><span>Open WebUI</span><span>Docker</span><span>Security</span>
         </div>
+        <div class="inline-actions">
+          <button class="modal-button secondary" type="button" data-modal-target="ai-modal">Details</button>
+        </div>
       </article>
 
       <article class="project-card">
@@ -140,7 +161,10 @@
         <div class="tech-badges">
           <span>Power BI</span><span>HTML</span><span>Process Analysis</span><span>BI</span>
         </div>
-        <a href="business-analytics-site.html" class="text-link">View project page</a>
+        <div class="inline-actions">
+          <button class="modal-button secondary" type="button" data-modal-target="analytics-modal">Details</button>
+          <a href="business-analytics-site.html" class="text-link">Project page</a>
+        </div>
       </article>
 
       <article class="project-card">
@@ -153,14 +177,183 @@
         <div class="tech-badges">
           <span>C#</span><span>Windows Forms</span><span>.NET 8</span>
         </div>
-        <a href="story-generator.html" class="text-link">View project page</a>
+        <div class="inline-actions">
+          <button class="modal-button secondary" type="button" data-modal-target="story-modal">Details</button>
+          <a href="story-generator.html" class="text-link">Project page</a>
+        </div>
       </article>
     </section>
   </main>
+
+  <dialog class="detail-modal" id="netops-modal" aria-labelledby="netops-title">
+    <div class="modal-shell">
+      <div class="modal-header">
+        <div><p class="eyebrow">Operations Platform</p><h2 id="netops-title">NetOps Command Center</h2></div>
+        <button class="modal-close" type="button" aria-label="Close dialog"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <p>A local-first dashboard for service health, asset context, incidents, configuration notes, and repeatable triage. The goal is to make homelab operations feel closer to a small NOC workflow: signals, ownership, checks, and remediation history in one place.</p>
+        <ul>
+          <li>Built around real device and service inventory rather than sample data.</li>
+          <li>Includes alert context, incident tracking, and operational notes for follow-through.</li>
+          <li>Designed for future SecureOps-style managed IT workflows.</li>
+        </ul>
+        <div class="modal-actions">
+          <a class="button primary" href="https://github.com/BrandonTsueda/netops-command-center" target="_blank" rel="noopener noreferrer">View repository</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="detail-modal" id="context-modal" aria-labelledby="context-title">
+    <div class="modal-shell">
+      <div class="modal-header">
+        <div><p class="eyebrow">Local Knowledge Tool</p><h2 id="context-title">Context Window</h2></div>
+        <button class="modal-close" type="button" aria-label="Close dialog"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <p>A desktop app for capturing project context, reusable notes, and work history so repeated discovery does not eat every new session. It reflects how I actually work across infrastructure, code, and documentation tasks.</p>
+        <ul>
+          <li>Next.js interface packaged with Electron for local use.</li>
+          <li>Focused on preserving context across long-running projects.</li>
+          <li>Useful for coding, incident notes, and career-material drafting.</li>
+        </ul>
+        <div class="modal-actions">
+          <a class="button primary" href="https://github.com/BrandonTsueda/context-window" target="_blank" rel="noopener noreferrer">View repository</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="detail-modal" id="homelab-modal" aria-labelledby="homelab-title">
+    <div class="modal-shell">
+      <div class="modal-header">
+        <div><p class="eyebrow">Infrastructure Lab</p><h2 id="homelab-title">Proxmox Homelab Infrastructure</h2></div>
+        <button class="modal-close" type="button" aria-label="Close dialog"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <p>This is the environment behind much of my learning and project work: Proxmox, Debian, LXCs, Docker, reverse proxying, DNS, VPN access, monitoring, AI services, and media automation. It gives me real failure modes to troubleshoot and real maintenance tradeoffs to manage.</p>
+        <ul>
+          <li>Services are treated as living systems with uptime, access, backup, and recovery concerns.</li>
+          <li>Monitoring and automation projects are tested against real hosts and containers.</li>
+          <li>Security choices are grounded in access control, segmentation, update paths, and logging.</li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="detail-modal" id="class-modal" aria-labelledby="class-title">
+    <div class="modal-shell">
+      <div class="modal-header">
+        <div><p class="eyebrow">Desktop Utility</p><h2 id="class-title">Class Instruction Condenser</h2></div>
+        <button class="modal-close" type="button" aria-label="Close dialog"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <p>A local Tkinter app that turns long assignment instructions into clear task briefs. The value is less about flash and more about preserving grading-sensitive details while making the work easier to execute.</p>
+        <ul>
+          <li>Built with Python, Tkinter, tests, and a packaged Windows executable.</li>
+          <li>Separates deliverables, constraints, and submission requirements.</li>
+          <li>Designed for private local use rather than sending coursework to a cloud service.</li>
+        </ul>
+        <div class="modal-actions">
+          <a class="button primary" href="https://github.com/BrandonTsueda/ClassInstructionCondenser" target="_blank" rel="noopener noreferrer">View repository</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="detail-modal" id="media-modal" aria-labelledby="media-title">
+    <div class="modal-shell">
+      <div class="modal-header">
+        <div><p class="eyebrow">Automation Workflow</p><h2 id="media-title">Media Update Broadcaster</h2></div>
+        <button class="modal-close" type="button" aria-label="Close dialog"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <p>A Python workflow for turning media-stack update activity into clear Discord-ready messages. It focuses on useful summaries, structured configuration, and logs that make the automation easy to trust.</p>
+        <ul>
+          <li>Fetches and formats update information for family-readable notifications.</li>
+          <li>Uses reusable configuration and a history file to avoid noisy repeats.</li>
+          <li>Built with deployment in mind for lightweight homelab hosting.</li>
+        </ul>
+        <div class="modal-actions">
+          <a class="button primary" href="https://github.com/BrandonTsueda/media-update-broadcaster" target="_blank" rel="noopener noreferrer">View repository</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="detail-modal" id="password-modal" aria-labelledby="password-title">
+    <div class="modal-shell">
+      <div class="modal-header">
+        <div><p class="eyebrow">Security Education</p><h2 id="password-title">Password Strength Analyzer</h2></div>
+        <button class="modal-close" type="button" aria-label="Close dialog"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <p>A local browser tool for explaining password quality in a way users can understand. It keeps the analysis client-side and turns security feedback into concrete guidance.</p>
+        <ul>
+          <li>Real-time scoring, checklist feedback, and entropy-oriented guidance.</li>
+          <li>Dark-mode interface with no server-side password handling.</li>
+          <li>Useful as a small example of practical security communication.</li>
+        </ul>
+        <div class="modal-actions">
+          <a class="button primary" href="https://github.com/BrandonTsueda/PasswordChecker" target="_blank" rel="noopener noreferrer">View repository</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="detail-modal" id="ai-modal" aria-labelledby="ai-title">
+    <div class="modal-shell">
+      <div class="modal-header">
+        <div><p class="eyebrow">Self-Hosted AI</p><h2 id="ai-title">Self-Hosted AI Workbench</h2></div>
+        <button class="modal-close" type="button" aria-label="Close dialog"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <p>A local AI environment for coding, writing, troubleshooting, and research workflows. The workbench is part experimentation and part infrastructure practice: models, containers, access rules, and enough observability to know when it is behaving.</p>
+        <ul>
+          <li>Built around Ollama, Open WebUI, Docker, and controlled local access.</li>
+          <li>Used to support coding, documentation, and operational workflows.</li>
+          <li>Reinforces the same deployment habits as other self-hosted services.</li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="detail-modal" id="analytics-modal" aria-labelledby="analytics-title">
+    <div class="modal-shell">
+      <div class="modal-header">
+        <div><p class="eyebrow">Business Intelligence</p><h2 id="analytics-title">Business Analytics Site</h2></div>
+        <button class="modal-close" type="button" aria-label="Close dialog"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <p>A web presentation of process analysis, operations analysis, decision support, and dashboard thinking. It connects the technical side of building a site with the analyst skill of shaping information for decisions.</p>
+        <div class="modal-actions">
+          <a class="button primary" href="business-analytics-site.html">Open project page</a>
+          <a class="button secondary" href="https://analysis.bratsuprime.com" target="_blank" rel="noopener noreferrer">Live site</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="detail-modal" id="story-modal" aria-labelledby="story-title">
+    <div class="modal-shell">
+      <div class="modal-header">
+        <div><p class="eyebrow">Creative Software</p><h2 id="story-title">Story Generator</h2></div>
+        <button class="modal-close" type="button" aria-label="Close dialog"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <p>An early C# WinForms project revisited with a cleaner .NET 8 build, genre-aware templates, export options, and a more polished Windows experience. It is intentionally lighter than the infrastructure work, but it shows follow-through on packaging and usability.</p>
+        <div class="modal-actions">
+          <a class="button primary" href="story-generator.html">Open project page</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
 
   <footer class="site-footer">
     <p>&copy; 2026 Brandon Tsueda. All Rights Reserved.</p>
   </footer>
 
+  <script src="site.js"></script>
 </body>
 </html>

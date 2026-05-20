@@ -3,67 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bratsu's Story Generator - Brandon Tsueda</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Story Generator | Brandon Tsueda</title>
+  <meta name="description" content="Bratsu's Story Generator, a C# Windows Forms creative coding project modernized with .NET 8 and a portable Windows build." />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
-      <div class="portrait-container">
-        <img src="Assets/Professional_Headshot.jpg" alt="Brandon Tsueda Professional Headshot" class="portrait-img" />
-      </div>
-
-      <div class="content-card hero-card">
-        <h1 class="hero-title">Bratsu's Story Generator</h1>
-        <p class="hero-subtitle">A creative coding project</p>
-      </div>
-    </header>
-
-    <nav class="site-nav" aria-label="Main navigation">
-      <div class="site-nav-links">
-        <a href="index.html#about">About</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="index.html#skills">Skills</a>
-        <a href="projects.html" class="active">Projects</a>
-        <a href="Brandon_Tsueda_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-        <a href="index.html#contact">Contact</a>
-      </div>
+  <header class="topbar">
+    <a class="brand" href="index.html">Brandon Tsueda</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#skills">Skills</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="Brandon_Tsueda_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
+  </header>
 
-    <section class="content-card">
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Creative Software Project</p>
+      <h1>Bratsu's Story Generator</h1>
       <p>
-        Bratsu's Story Generator is a lighthearted, interactive app that lets you create your own short stories with just a few word prompts.
-        Choose a genre such as Fantasy, Sci-Fi, Mystery, Adventure, Horror, Comedy, or Drama, then enter a noun, verb, adjective, and adverb to generate a personalized adventure.
+        A C# Windows Forms app that turns a few prompts into short genre-aware stories, then lets the user copy
+        or export the result. It started as an early programming project and was later modernized with .NET 8.
       </p>
-
-      <p>
-        This was one of my early programming projects, originally built in C# using Windows Forms. Recently, I revisited and modernized it with .NET 8, cleaner generation logic, a polished GUI, and a portable Windows build.
-        It now includes genre-aware story templates, randomized prompts, dark mode, audio controls, copy support, and formatted <code>.txt</code> / <code>.md</code> export.
-      </p>
-
-      <p>
-        It's a simple but fun example of how code and imagination can come together. Whether you're trying it solo or with your kids, the Story Generator makes it easy to create something quirky and unique.
-      </p>
-
-      <div class="mt-4 mb-3">
+      <div class="page-actions">
         <a href="https://github.com/BrandonTsueda/StoryGeneratorApp/releases/download/StoryGenerator/StoryGeneratorApp-win-x64-dotnet8.zip"
-           class="btn btn-info text-white"
+           class="button primary"
            target="_blank"
            rel="noopener noreferrer">
-          Download StoryGeneratorApp for Windows
+          <i class="bi bi-download"></i> Download Windows Build
         </a>
+        <button class="modal-button secondary" type="button" data-modal-target="story-detail-modal">
+          <i class="bi bi-window-sidebar"></i> Project Notes
+        </button>
       </div>
-
-      <p><em>Built with C#, WinForms, .NET 8, and a bit of nostalgia.</em></p>
     </section>
 
-    <footer class="site-footer">
-      <p class="mb-0">&copy; 2026 Brandon Tsueda. All Rights Reserved.</p>
-    </footer>
-  </div>
+    <section class="detail-layout">
+      <article class="content-card detail-copy">
+        <p>
+          The app is intentionally simple: pick a genre, provide a few words, and generate a short story. The more useful
+          part of the project was revisiting it with better structure, cleaner generation logic, copy support, export
+          options, audio controls, and a portable Windows release.
+        </p>
+        <p>
+          Not every portfolio project needs to be an infrastructure platform. This one shows that I can return to old
+          code, improve the user experience, package it properly, and leave it in a better state.
+        </p>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <h2>What changed in the modernization</h2>
+        <ul>
+          <li>Updated the app for .NET 8 and a cleaner Windows build.</li>
+          <li>Added genre-aware story templates and randomized prompts.</li>
+          <li>Added dark mode, audio controls, copy support, and formatted text export.</li>
+          <li>Improved the interface so the project feels like a finished utility instead of a class demo.</li>
+        </ul>
+      </article>
+
+      <aside class="detail-panel">
+        <h3>Project snapshot</h3>
+        <ul class="detail-list">
+          <li><strong>Focus</strong><span>Creative desktop app</span></li>
+          <li><strong>Stack</strong><span>C#, Windows Forms, .NET 8</span></li>
+          <li><strong>Outcome</strong><span>Portable Windows release with a cleaner UI</span></li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <dialog class="detail-modal" id="story-detail-modal" aria-labelledby="story-detail-title">
+    <div class="modal-shell">
+      <div class="modal-header">
+        <div>
+          <p class="eyebrow">Project Notes</p>
+          <h2 id="story-detail-title">A small app with a real finish line.</h2>
+        </div>
+        <button class="modal-close" type="button" aria-label="Close dialog"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          This project is here because it shows iteration. I took an older app, kept the playful core, and improved the
+          parts that make software feel complete: packaging, controls, copy/export behavior, and visual polish.
+        </p>
+        <div class="modal-grid">
+          <div class="modal-note">
+            <h3>User-facing work</h3>
+            <p>Genre selection, prompt handling, generated output, dark mode, and export options.</p>
+          </div>
+          <div class="modal-note">
+            <h3>Engineering work</h3>
+            <p>.NET 8 modernization, portable Windows build, cleaner generation logic, and release packaging.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Brandon Tsueda. All Rights Reserved.</p>
+  </footer>
+
+  <script src="site.js"></script>
 </body>
 </html>
